@@ -1,6 +1,4 @@
 
-
-
 function randomNumberGenerator(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
@@ -73,9 +71,24 @@ function playGame() {
             console.log("It's a TIE!");
         }
     }
+
     console.log("Final Score!");
     console.log("Human Score: " + userScore);
     console.log("Computer Score: " + computerScore);
+
+    if (userScore > computerScore) {
+        console.log("You win the game!!!")
+        console.log("Thanks for playing!")
+    } else if ( userScore < computerScore) {
+        console.log("You suck! You lost to a robot!")
+        console.log("Thanks for playing!")
+    } else if (userScore == computerScore){
+        console.log("it's a tie.")
+        console.log("Thanks for playing!")
+    } else {
+        console.log("idk how you got here")
+    }
+    
 }
 
 
